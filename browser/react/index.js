@@ -46,6 +46,7 @@ const onAlbumEnter = function (nextRouterState) {
   const albumId = nextRouterState.params.albumId;
   store.dispatch(getAlbumById(albumId));
 };
+
 const onArtistEnter = function (nextRouterState) {
   const artistId = nextRouterState.params.artistId;
   store.dispatch(getArtistById(artistId));

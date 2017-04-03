@@ -2,8 +2,8 @@ import React from 'react';
 import Songs from '../components/Songs';
 
 export default function Album (props) {
-
-  const album = props.selectedAlbum;
+  console.log("props in the album", props);
+  const album = props.album;
   const currentSong = props.currentSong;
   const isPlaying = props.isPlaying;
   const toggleOne = props.toggleOne;
@@ -15,10 +15,8 @@ export default function Album (props) {
         <img src={ album.imageUrl } className="img-thumbnail"/>
       </div>
       <Songs
-        songs={album.songs}
-        currentSong={currentSong}
-        isPlaying={isPlaying}
-        toggleOne={toggleOne}/>
+        songs={album.songs} />
+
     </div>
   );
 
