@@ -13,6 +13,7 @@ const DUMMY_IS_PLAYING = false;
 const DUMMY_TOGGLE_ONE = function () {};
 
 export default (props) => { 
+	console.log("STARS ****", props)
 	const station = props.station
 
 	return (
